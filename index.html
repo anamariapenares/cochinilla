@@ -1,1 +1,384 @@
-Tinte de cochinilla
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Proyecto Cochinilla - Seminario San Carlos y San Marcelo</title>
+    
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos CSS -->
+    <style>
+        :root {
+            --primary-blue: hsl(204 70% 53%);
+            --light-blue: hsl(204 64% 67%);
+            --dark-blue: hsl(210 29% 24%);
+            --light-gray: hsl(210 17% 98%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-blue);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--dark-blue);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            z-index: 50;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4rem;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .nav-brand img {
+            height: 3rem;
+            width: auto;
+        }
+
+        .nav-brand span {
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.125rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-blue);
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+            color: white;
+            padding: 8rem 1rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .hero-content {
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .team-member h3 {
+            margin: 1rem 0 0.5rem;
+            color: var(--dark-blue);
+        }
+
+        .team-member p {
+            color: var(--light-blue);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 2rem 0;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="nav-brand">
+                    <img src="https://raw.githubusercontent.com/anamariapenares-ai/cochinilla/refs/heads/main/insignia%20seminario.png" alt="Logo Colegio">
+                    <span>Proyecto Cochinilla</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#abstract">Resumen</a></li>
+                    <li><a href="#team">Equipo</a></li>
+                    <li><a href="#theory">Marco Teórico</a></li>
+                    <li><a href="#methodology">Metodología</a></li>
+                    <li><a href="#results">Resultados</a></li>
+                    <li><a href="#evidence">Evidencias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Obtención de Tinta Natural a Base de Cochinilla</h1>
+            <p>Proyecto Científico Escolar - 2025</p>
+            <h3>Estudiantes del 5° "A" de Primaria</h3>
+            <h4>Colegio Seminario de San Carlos y San Marcelo</h4>
+            <p>"Colegio Histórico del Perú"</p>
+        </div>
+    </section>
+
+    <!-- Sección Resumen -->
+    <section id="abstract">
+        <div class="section-content">
+            <h2>Resumen del Proyecto</h2>
+            <p>El presente trabajo tuvo como objetivo extraer colorante natural a partir de la cochinilla (Dactylopius coccus) y conocer las diferentes tonalidades al variar el pH de la solución.</p>
+            <p>Este proyecto investigativo-experimental fue realizado con el propósito de conocer el uso de la grana cochinilla como fuente de tinta natural. Se obtuvo el colorante natural luego de recolectar del cactus de nopal, posteriormente se procedió al secado, molienda y dilución con diversos medios utilizados variantes en pH, para observar los cambios de color.</p>
+            <p>Los resultados muestran la viabilidad de su uso educativo y artístico.</p>
+        </div>
+    </section>
+
+    <!-- Sección Equipo -->
+    <section id="team">
+        <div class="section-content">
+            <h2>Equipo del Proyecto</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Ana Key Cribilleros Villanueva</h3>
+                    <p>Asesora del Proyecto</p>
+                </div>
+                <div class="team-member">
+                    <h3>James Yeray Bolaños Salvatierra</h3>
+                </div>
+                <div class="team-member">
+                    <h3>William Franco Boy Palacios</h3>
+                </div>
+                <div class="team-member">
+                    <h3>Santiago Stéfano Chávez Orellana</h3>
+                </div>
+                <div class="team-member">
+                    <h3>Jared Leo Orbegoso Peñares</h3>
+                </div>
+                <div class="team-member">
+                    <h3>Angelo Carusso Otiniano Galindo</h3>
+                </div>
+                <div class="team-member">
+                    <h3>Bryan Miguel Ramos Pazos</h3>
+                </div>
+                <div class="team-member">
+                    <h3>Bruno Gabriel Ruíz Baca</h3>
+                </div>
+                <div class="team-member">
+                    <h3>Sebastián Benjamín Saavedra León</h3>
+                </div>
+                <div class="team-member">
+                    <h3>Juan Diego Toro López</h3>
+                </div>
+                <div class="team-member">
+                    <h3>Jorge Amaro Vargas Andrade</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Marco Teórico -->
+    <section id="theory">
+        <div class="section-content">
+            <h2>Marco Teórico</h2>
+            <h3>La Cochinilla</h3>
+            <p>El uso de colorantes naturales se remonta a la época prehispánica, utilizando extractos de zanahoria, acelga, remolacha, raíces, plantas e insectos. Dentro de los insectos, destaca la cochinilla, cuyo nombre científico es Dactylopius coccus.</p>
+            <p>La cochinilla es un insecto pequeño nativo, caracterizado por su pigmento rojo carmín intenso en su estado natural, habita exclusivamente como huésped de las plantas cactáceas como la tuna o nopal.</p>
+            
+            <h3>Ácido Carmínico</h3>
+            <p>El ácido carmínico es un colorante natural utilizado en la industria textil, cosmética y alimenticia. Su fórmula química es C22H20O13.</p>
+            <p>Es un compuesto orgánico que contiene un esqueleto de antraquinona y un grupo azucarado, representando una alternativa ecológica frente a los colorantes sintéticos.</p>
+            
+            <h3>Importancia Nacional</h3>
+            <p>Según estudios, el Perú es el principal productor mundial de cochinilla y por ende del ácido carmínico. Las cactáceas son originarias de América Central y países andinos como Perú, Ecuador y Bolivia.</p>
+        </div>
+    </section>
+
+    <!-- Sección Hipótesis y Objetivos -->
+    <section id="hypothesis">
+        <div class="section-content">
+            <h2>Hipótesis y Objetivos</h2>
+            <h3>Hipótesis Principal</h3>
+            <p>Si se utiliza cochinilla como materia prima, entonces se podrá obtener un tinte natural seguro, económico y eficaz para uso escolar.</p>
+            
+            <h3>Objetivo Principal</h3>
+            <p>Obtener el tinte natural de grana cochinilla de manera segura por los estudiantes del 5to de primaria.</p>
+            
+            <h3>Objetivos Específicos</h3>
+            <ul>
+                <li>Obtener diferentes tonalidades del tinte natural al combinarlo con otros medios</li>
+                <li>Obtener variantes de tonalidad oscura mediante combinación con medio básico</li>
+                <li>Obtener variantes de tonalidad clara mediante combinación con medio ácido</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección Metodología -->
+    <section id="methodology">
+        <div class="section-content">
+            <h2>Metodología</h2>
+            <h3>Diseño de la Investigación</h3>
+            <p>Estudio descriptivo, diseño experimental, enfoque cualitativo</p>
+            
+            <h3>Materiales</h3>
+            <ul>
+                <li>Grana cochinilla seca</li>
+                <li>Mortero</li>
+                <li>Agua hervida</li>
+                <li>Limón y bicarbonato</li>
+                <li>Recipientes plásticos</li>
+            </ul>
+            
+            <h3>Variables</h3>
+            <p>Variable independiente: pH del medio</p>
+            <p>Variable dependiente: Tonalidad del tinte</p>
+            
+            <h3>Procedimiento</h3>
+            <ol>
+                <li>Obtención: Recolección de la grana cochinilla del cactus nopal</li>
+                <li>Secado: Secado al aire libre de la cochinilla</li>
+                <li>Molienda: Trituración de la cochinilla usando mortero</li>
+                <li>Separación: División en tres porciones para diferentes medios</li>
+                <li>Dilución: Mezcla con medios de diferentes pH (agua, limón, bicarbonato)</li>
+                <li>Observación: Registro de cambios de coloración</li>
+                <li>Teñido: Aplicación con pincel sobre tela de algodón</li>
+                <li>Secado: Secado del material teñido</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Sección Resultados -->
+    <section id="results">
+        <div class="section-content">
+            <h2>Resultados</h2>
+            <h3>Éxito en Obtención de Tinte</h3>
+            <p>El 100% de los estudiantes logró obtener tinte natural de cochinilla</p>
+            
+            <h3>Resultados por pH</h3>
+            <div class="results-grid">
+                <div class="result-item">
+                    <h4>pH Neutro (Agua)</h4>
+                    <p>Color: Rojo carmesí</p>
+                    <p>Resultado natural de la cochinilla</p>
+                </div>
+                <div class="result-item">
+                    <h4>pH Ácido (Limón)</h4>
+                    <p>Color: Anaranjado</p>
+                    <p>Tonalidad más clara y brillante</p>
+                </div>
+                <div class="result-item">
+                    <h4>pH Básico (Bicarbonato)</h4>
+                    <p>Color: Morado/Púrpura</p>
+                    <p>Tonalidad más oscura</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Discusión y Conclusiones -->
+    <section id="discussion">
+        <div class="section-content">
+            <h2>Discusión y Conclusiones</h2>
+            <h3>Discusión</h3>
+            <p>En este trabajo pudimos comprobar que sí es posible obtener un tinte natural a partir de la cochinilla. Cuando la trituramos y la preparamos, conseguimos un color rojo carmesí muy intenso.</p>
+            <p>El color del tinte cambia dependiendo del pH del medio con el que se combine. Al mezclar la cochinilla con bicarbonato (básico), el color se volvió más oscuro, con tonalidades morado o púrpura. Con limón (ácido), el color se volvió más claro, tomando un tono anaranjado.</p>
+            <p>Comprobamos que este tinte puede aplicarse en la vida real, manteniéndose después del secado en telas de algodón.</p>
+            
+            <h3>Conclusiones</h3>
+            <p>Se comprobó la viabilidad de obtener un tinte natural a partir de la grana cochinilla, el cual presenta distintas tonalidades al variar el pH del medio.</p>
+            <p>El uso de la cochinilla como colorante representa una alternativa ecológica y saludable frente a los colorantes sintéticos, permitiendo aprovechar un recurso natural sin generar contaminación.</p>
+        </div>
+    </section>
+
+    <!-- Script para el scroll suave -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
